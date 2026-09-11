@@ -1,0 +1,22 @@
+name: InvisionWorld
+version: '1.6.0'
+main: com.invision.world.InvisionWorldPlugin
+author: InVision
+description: Collective chunk expansion and world fund for InVision Anarchy
+api-version: '26.1'
+depend:
+  - Vault
+softdepend:
+  - Essentials
+  - EssentialsX
+  - floodgate
+commands:
+  world:
+    description: World expansion and fund
+    usage: /world <info|buy|donate|fund|map|stats|reload>
+    permission: invisionworld.player
+permissions:
+  invisionworld.player:
+    default: true
+  invisionworld.admin:
+    default: op

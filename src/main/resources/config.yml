@@ -1,0 +1,26 @@
+world-name: "anarchy"
+# Initial playable area: exactly 16x16 chunks = 256x256 blocks.
+# Center is anchored to the chunk containing the current Multiverse spawn.
+initial-chunks-per-side: 16
+base-chunk-price: 100.0
+price-multiplier: 2.0
+allow-locked-entry: false
+max-purchase-layer: 50
+map-id: -1
+
+# There is only ONE WorldBorder: the outer playable boundary.
+# Individual chunks do NOT get WorldBorders. The map is the visual chunk guide.
+messages:
+  prefix: "&8[&6InVision&8] &7"
+
+# Worlds protected by the same global expansion. The purchase shape is shared by relative chunk offset.
+protected-worlds:
+  - "anarchy"
+  - "anarchy_nether"
+  - "anarchy_the_end"
+
+visual-boundary:
+  enabled: true
+  radius: 48
+  interval-ticks: 10
+  spacing: 4
